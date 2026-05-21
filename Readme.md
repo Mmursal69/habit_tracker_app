@@ -5,3 +5,4 @@ This project is built using only html,css, javascript. There is no installation 
 1. Clone or download this repo.
 2. Open the project folder.
 3. Double-click index.html to open it.
+Or you can got to [here]{https://habit-tracker-app-roan.vercel.app/}
