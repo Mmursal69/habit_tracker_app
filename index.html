@@ -7,52 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container">
-        <!-- Header Section -->
+    <div class="app_container">
         <header>
-            <div class="logo-area">
-                <h1>Routine<span>Pulse</span></h1>
-                <p>Track your weekly disciplines</p>
+            <div class="logo_area">
+                <h1>Habit<span> Maker</span></h1>
+                <p>Track your weekly routines</p>
             </div>
             
-            <!-- Week Navigation Controls -->
-            <div class="nav-controls">
-                <button id="prev-week-btn" class="btn btn-secondary" aria-label="Previous week">← Prev</button>
-                <button id="current-week-btn" class="btn btn-secondary" aria-label="Current week">Today's Week</button>
-                <button id="next-week-btn" class="btn btn-secondary" aria-label="Next week">Next →</button>
-                <span id="week-label" class="week-title">Loading week...</span>
+            <div class="nav_controls">
+                <button id="prev_week_btn" class="btn btn_secondary" aria-label="Previous week">Prev</button>
+                <button id="current_week_btn" class="btn btn_secondary" aria-label="Current week">Today's Week</button>
+                <button id="next_week_btn" class="btn btn_secondary" aria-label="Next week">Next</button>
+                <span id="week_label" class="week_title">Loading week...</span>
             </div>
         </header>
 
-        <!-- Main Workspace -->
         <main>
-            <!-- Control bar to add new habits -->
-            <div class="action-bar">
-                <form id="add-habit-form">
-                    <input type="text" id="habit-input" placeholder="e.g., Read 30 mins, Exercise..." required maxlength="50" aria-label="New habit name">
-                    <button type="submit" class="btn btn-primary">Add Habit</button>
+            <div class="action_bar">
+                <form id="add_habit_form">
+                    <input type="text" id="habit_input" placeholder="e.g., Reading, Going for a jog, swimming" required maxlength="50" aria-label="New habit name">
+                    <button type="submit" class="btn btn_primary">Add Habit</button>
                 </form>
             </div>
-
-            <!-- Context Container: Toggled via JavaScript -->
-            <div id="empty-state" class="empty-state hidden">
-                <div class="empty-icon">🌱</div>
-                <h2>Your tracker is looking empty</h2>
-                <p>Small daily actions lead to massive life changes. Type a habit above and hit add to start your streak.</p>
+            <div id="empty_state" class="empty_state hidden">
+                <div class="empty_icon">?</div>
+                <h2>Your routines look very empty</h2>
+                <p>Small daily actions lead to massive life changes. Type a habit above and start with a change.</p>
             </div>
-
-            <div id="grid-container" class="grid-scroll-wrapper">
-                <table id="habit-table">
+            <div id="grid_container" class="grid_scroll_wrapper">
+                <table id="habit_table">
                     <thead>
-                        <tr id="table-header-row">
-                            <!-- Headers generated dynamically by JS -->
+                        <tr id="table_header_row">
                         </tr>
                     </thead>
-                    <tbody id="table-body">
-                        <!-- Habit rows generated dynamically by JS -->
+                    <tbody id="table_body">
                     </tbody>
                 </table>
             </div>
+
         </main>
     </div>
 
